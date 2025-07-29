@@ -45,7 +45,7 @@ const VolunteerPage = () => {
 
   const prevFunction = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
-    if (step > 25) {
+    if (Math.floor(step) > (1 / 3) * 100) {
       setStep((prev) => prev - (1 / 3) * 100);
     }
   };

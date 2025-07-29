@@ -51,7 +51,7 @@ export const VolunteerFormSchema = z.object({
     .refine((val) => isValidPhoneNumber(val || ""), {
       message: "Enter a valid phone number",
     }),
-  occupation: z.string(),
+  occupation: z.string().min(1, "Enter a valid occupation"),
   availability: z
     .array(
       z.enum([
@@ -89,10 +89,10 @@ export const VolunteerFormSchema = z.object({
       ])
     )
     .length(2, "Must select exactly 2"),
-  attendance: z.string(),
-  certificate: z.string(),
+  attendance: z.string("Select one"),
+  certificate: z.string("Select one"),
   resume: z
-    .instanceof(File)
+    .instanceof(File, { message: "Please upload a file." })
     .refine(
       (file) =>
         [

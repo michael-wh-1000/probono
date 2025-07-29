@@ -40,8 +40,8 @@ const Header = () => {
           >
             SECTORS
           </FlyoutLink>
-          <CustomLink href="/about">
-            <Link href={"/about"} prefetch={true}>
+          <CustomLink href="/aboutus">
+            <Link href={"/aboutus"} prefetch={true}>
               ABOUT
             </Link>
           </CustomLink>
@@ -91,7 +91,7 @@ const Header = () => {
             </Link>
           </span>
           <span className="hover:text-black cursor-pointer">
-            <Link href={"/about"} prefetch={true}>
+            <Link href={"/aboutus"} prefetch={true}>
               About
             </Link>
           </span>

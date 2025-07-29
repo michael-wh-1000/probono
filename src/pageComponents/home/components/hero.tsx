@@ -39,7 +39,7 @@ const Hero = () => {
             }}
             className="bg-gradient-to-r from-orange-primary to-orange-secondary font-rustico text-white px-[20px] py-[10px] lg:px-[25px] lg:py-[12.5px] xl:px-[30px] xl:py-[15px] text-[18px] lg:text-[22px] h-fit w-fit border-[1px] border-black"
           >
-            <Link href="/about" prefetch={true}>
+            <Link href="/aboutus" prefetch={true}>
               LEARN MORE
             </Link>
           </motion.button>

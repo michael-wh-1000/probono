@@ -46,7 +46,7 @@ const Footer = () => {
               </Link>
             </span>
             <span className="cursor-pointer">
-              <Link href={"/about"} prefetch={true}>
+              <Link href={"/aboutus"} prefetch={true}>
                 About
               </Link>
             </span>

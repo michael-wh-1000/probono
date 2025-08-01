@@ -68,15 +68,18 @@ const VolunteerPage = () => {
 
     setLoading(true);
 
-    const result = await axios.post(
-      "http://localhost:3000/api/formsubmit",
-      data
-    );
+    try {
+      const result = await axios.post(`/api/formsubmit`, data);
 
-    if (result.status === 200) {
-      setLoading(false);
-      router.push("/volunteer/success");
-    } else {
+      if (result.status === 200) {
+        setLoading(false);
+        router.push("/volunteer/success");
+      } else {
+        setLoading(false);
+        router.push("/volunteer/failure");
+      }
+    } catch (error) {
+      console.error(error);
       setLoading(false);
       router.push("/volunteer/failure");
     }

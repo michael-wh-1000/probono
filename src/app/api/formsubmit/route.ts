@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 import type { NextRequest, NextResponse } from "next/server";
 import { VolunteerFormSchema } from "@/lib/types";
 
-async function GET(req: NextRequest) {
+export async function GET(req: NextRequest) {
   return Response.json("Just a test");
 }
 
@@ -65,9 +65,6 @@ export async function POST(req: NextRequest) {
 
   const arrayBuffer = await file.arrayBuffer();
   const buffer = Buffer.from(arrayBuffer);
-
-  console.log(emailText);
-  console.log(file);
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_SERVER_HOST,

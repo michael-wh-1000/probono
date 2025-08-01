@@ -103,15 +103,11 @@ export default function SecondStep({
     if (skillValue === "Other") {
       setCustomSkill(true);
       setValue("skills", "");
-      console.log(skill);
     } else {
       setCustomSkill(false);
       setValue("skills", skillValue, { shouldValidate: true });
-      console.log(skill);
     }
   };
-
-  console.log(skill);
 
   useEffect(() => {
     if (customSkill && skill === "") {

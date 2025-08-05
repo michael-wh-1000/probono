@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     siteName: "Probono Uganda",
     images: [
       {
-        url: "http://www.moodbound.com/og-image.jpg",
+        url: "http://www.itsprobono.org/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Probono Uganda",
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
         society positively by establishing outreach programs aimed at
         various sections of society and integrating the communities to meet
         their unique needs.`,
-    images: ["http://www.moodbound.com/og-image.jpg"],
+    images: ["http://www.itsprobono.org/og-image.jpg"],
   },
 };
 

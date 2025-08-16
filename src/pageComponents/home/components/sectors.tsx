@@ -10,7 +10,7 @@ export default function Sectors() {
       <div className="w-full flex flex-wrap justify-center  gap-[20px] px-[20px] md:px-[30px] lg:px-[40px] xl:px-[50px]">
         <Link
           href={"/femmes"}
-          className="flex flex-col bg-pink-400 w-full max-w-[350px] items-center justify-center gap-[20px] text-white p-[20px] rounded-2xl hover:brightness-90 transition-all group"
+          className="flex flex-col bg-pink-400/70 w-full max-w-[350px] items-center justify-center gap-[20px] text-white p-[20px] rounded-2xl hover:brightness-90 transition-all group"
         >
           <img
             src={"/logos/femmes.svg"}
@@ -23,7 +23,7 @@ export default function Sectors() {
 
         <Link
           href={"/educators"}
-          className="flex flex-col bg-orange-400 w-full max-w-[350px]  items-center justify-center gap-[20px] text-white p-[20px] rounded-2xl hover:brightness-90 transition-all group"
+          className="flex flex-col bg-orange-400/70 w-full max-w-[350px]  items-center justify-center gap-[20px] text-white p-[20px] rounded-2xl hover:brightness-90 transition-all group"
         >
           <img
             src={"/logos/educators.svg"}
@@ -35,7 +35,7 @@ export default function Sectors() {
         </Link>
         <Link
           href={"/health"}
-          className="flex flex-col bg-pink-950 w-full max-w-[350px]  items-center justify-center gap-[20px] text-white p-[20px] rounded-2xl hover:brightness-90 transition-all group"
+          className="flex flex-col bg-pink-950/70 w-full max-w-[350px]  items-center justify-center gap-[20px] text-white p-[20px] rounded-2xl hover:brightness-90 transition-all group"
         >
           <img
             src={"/logos/health.svg"}
@@ -47,7 +47,7 @@ export default function Sectors() {
         </Link>
         <Link
           href={"/environment"}
-          className="flex flex-col bg-teal-700 w-full max-w-[350px]  items-center justify-center gap-[20px] text-white p-[20px] rounded-2xl hover:brightness-90 transition-all group"
+          className="flex flex-col bg-teal-700/70 w-full max-w-[350px]  items-center justify-center gap-[20px] text-white p-[20px] rounded-2xl hover:brightness-90 transition-all group"
         >
           <img
             src={"/logos/environment.svg"}

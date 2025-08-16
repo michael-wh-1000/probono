@@ -1,5 +1,6 @@
 "use client";
 
+import clsx from "clsx";
 import { motion } from "motion/react";
 
 const Sectors = () => {
@@ -23,7 +24,18 @@ const Sectors = () => {
             <h1 className="text-[18px] md:text-[22px] font-Rustico">
               {sector.name}
             </h1>
-            <div className="text-[12px] md:text-[14px] min-h-[320px] w-[280px] sm:w-[265px] md:w-[285px] lg:w-[300px] border-[2px] border-white p-[40px] text-center rounded-2xl">
+            <div
+              className={clsx(
+                "text-[12px] md:text-[14px] min-h-[320px] w-[280px] sm:w-[265px] md:w-[285px] lg:w-[300px] border-[2px] border-white p-[40px] text-center rounded-2xl",
+                index === 0
+                  ? "bg-pink-950/40"
+                  : index === 1
+                  ? "bg-pink-400/40"
+                  : index === 2
+                  ? "bg-teal-700/40"
+                  : "bg-amber-400/40"
+              )}
+            >
               <motion.div
                 initial={{ opacity: 0, y: "10%" }}
                 whileInView={{ opacity: 1, y: 0 }}

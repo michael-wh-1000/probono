@@ -9,16 +9,12 @@ const katusuroImages = [
 ];
 const mubendeImages = ["/images/15.webp", "/images/14.webp", "/images/16.webp"];
 const mtnImages = [
-  "/projects/mtn/1.jpg",
   "/projects/mtn/2.jpg",
-  "/projects/mtn/3.jpg",
-  "/projects/mtn/4.jpg",
   "/projects/mtn/5.jpg",
   "/projects/mtn/6.jpg",
   "/projects/mtn/7.jpg",
   "/projects/mtn/8.jpg",
   "/projects/mtn/9.jpg",
-  "/projects/mtn/10.jpg",
   "/projects/mtn/11.jpg",
   "/projects/mtn/12.jpg",
 ];

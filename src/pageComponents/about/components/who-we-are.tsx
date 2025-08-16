@@ -29,7 +29,7 @@ const WhoWeAre = () => {
         exit={{ x: "10%" }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        src="/images/aboutus.webp"
+        src="/images/about.webp"
         className="w-[80%] object-cover md:w-[400px] lg:w-[550px]  px-[20px] md:px-[40px]"
       />
     </div>

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
 import localFont from "next/font/local";
+import { ConditionalLayout } from "@/components/conditional-layout";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const rustico = localFont({
   src: "../assets/fonts/Rustico-Regular.otf",
@@ -145,12 +145,9 @@ export default function RootLayout({
         <link rel="manifest" href="/icons/site.webmanifest" />
       </head>
       <body className={`${rustico.variable} ${poppins.variable} antialiased`}>
-        <div className="overflow-hidden min-h-screen flex flex-col">
-          <Header />
-          {children}
-          <div className="flex-1"></div>
-          <Footer />
-        </div>
+        <TooltipProvider>
+          <ConditionalLayout>{children}</ConditionalLayout>
+        </TooltipProvider>
       </body>
     </html>
   );
